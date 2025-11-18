@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Meka AI - Award-winning AI solution provider specializing in agentic solutions for customer service, restaurants, legal, and data analytics.">
+    <meta name="keywords" content="AI solutions, agentic AI, customer service AI, restaurant AI, legal AI, NL2SQL">
+    <title>Meka AI: Award Winning AI Solution Provider</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="meka-ai-logo.jpg" alt="Meka AI Logo">
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#solutions">Solutions</a></li>
+                <li><a href="#cloud">Cloud</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Transforming Business with Agentic AI Solutions</h1>
+            <p class="hero-subtitle">
+                Empowering enterprises with intelligent AI agents that work 24/7,
+                across any channel, in any language. Experience the future of automation.
+            </p>
+            <div class="hero-cta">
+                <button class="btn btn-primary" onclick="scrollToSection('solutions')">
+                    Explore Solutions
+                    <span>→</span>
+                </button>
+                <button class="btn btn-secondary" onclick="scrollToSection('contact')">
+                    Get Started
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section class="section" id="solutions">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Our Agentic Solutions</h2>
+                <p class="section-subtitle">
+                    Cutting-edge AI agents designed to revolutionize your business operations
+                </p>
+            </div>
+
+            <div class="solutions-grid">
+                <!-- Harper -->
+                <div class="solution-card reveal">
+                    <div class="solution-icon">
+                        🎙️
+                    </div>
+                    <h3>Harper</h3>
+                    <p>
+                        Voice-over agent for the service industry. Harper engages customers 24/7,
+                        on any channel, and in any language, freeing your team from repetitive
+                        questions in customer care or sales queues.
+                    </p>
+                </div>
+
+                <!-- Lucy -->
+                <div class="solution-card reveal">
+                    <div class="solution-icon">
+                        🍽️
+                    </div>
+                    <h3>Lucy</h3>
+                    <p>
+                        Intelligent ordering agent for restaurants and hotels. Lucy seamlessly
+                        takes orders over phone or via kiosks, ensuring accuracy and efficiency
+                        while enhancing customer experience.
+                    </p>
+                </div>
+
+                <!-- Polly -->
+                <div class="solution-card reveal">
+                    <div class="solution-icon">
+                        ⚖️
+                    </div>
+                    <h3>Polly</h3>
+                    <p>
+                        Legal and policy documentation agent. Polly provides answers grounded in
+                        provenance for legal docs and internal policy documents with precise
+                        citations and source verification.
+                    </p>
+                </div>
+
+                <!-- NL2SQL -->
+                <div class="solution-card reveal">
+                    <div class="solution-icon">
+                        💾
+                    </div>
+                    <h3>NL2SQL</h3>
+                    <p>
+                        Natural language to SQL converter. Creates queries under any underlying
+                        data schema and provides answers back in low latency, optimized for
+                        minimal LLM calls and maximum performance.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cloud Expertise Section -->
+    <section class="section section-dark" id="cloud">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Cloud Expertise</h2>
+                <p class="section-subtitle">
+                    Partnered with leading cloud providers to deliver scalable,
+                    secure, and reliable AI solutions
+                </p>
+            </div>
+
+            <div class="cloud-partners">
+                <div class="partner-logo reveal">
+                    <img src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg"
+                        alt="Google Cloud" style="max-width: 180px;">
+                </div>
+                <div class="partner-logo reveal">
+                    <svg width="180" height="40" viewBox="0 0 180 40" fill="none">
+                        <text x="10" y="28" font-family="Segoe UI, Arial" font-size="22" font-weight="600"
+                            fill="#0078D4">Microsoft Azure</text>
+                    </svg>
+                </div>
+                <div class="partner-logo reveal">
+                    <svg width="100" height="60" viewBox="0 0 100 60" fill="none">
+                        <path d="M30 10L40 30L30 30L20 10H30Z" fill="#FF9900" />
+                        <path d="M40 30L50 10H60L50 30H40Z" fill="#FF9900" />
+                        <text x="20" y="50" font-family="Arial" font-size="18" font-weight="700"
+                            fill="#232F3E">AWS</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">About Meka AI</h2>
+                <p class="section-subtitle">
+                    We are pioneers in agentic AI solutions, dedicated to transforming
+                    how businesses interact with their customers and data
+                </p>
+            </div>
+
+            <div class="solutions-grid">
+                <div class="solution-card reveal">
+                    <div class="solution-icon">🎯</div>
+                    <h3>Our Mission</h3>
+                    <p>
+                        To empower businesses with intelligent AI agents that automate
+                        complex tasks, enhance customer experiences, and drive operational
+                        excellence across industries.
+                    </p>
+                </div>
+
+                <div class="solution-card reveal">
+                    <div class="solution-icon">🚀</div>
+                    <h3>Innovation First</h3>
+                    <p>
+                        We leverage cutting-edge AI technologies and best practices to
+                        deliver solutions that are not just functional, but transformative
+                        for your business operations.
+                    </p>
+                </div>
+
+                <div class="solution-card reveal">
+                    <div class="solution-icon">🤝</div>
+                    <h3>Partnership Approach</h3>
+                    <p>
+                        We work closely with our clients to understand their unique
+                        challenges and deliver customized AI solutions that integrate
+                        seamlessly with their existing infrastructure.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Proven Track Record</h2>
+                <p class="section-subtitle">
+                    Numbers that speak to our commitment to excellence
+                </p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card reveal">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">Years of AI Expertise</div>
+                </div>
+
+                <div class="stat-card reveal">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Successful Deployments</div>
+                </div>
+
+                <div class="stat-card reveal">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Client Satisfaction</div>
+                </div>
+
+                <div class="stat-card reveal">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">AI Agent Availability</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials/Case Studies Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Client Success Stories</h2>
+                <p class="section-subtitle">
+                    See how our AI solutions have transformed businesses across industries
+                </p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal">
+                    <p class="testimonial-content">
+                        "Meka AI's Harper solution transformed our customer service operations.
+                        We've reduced response times by 80% and our customer satisfaction scores
+                        have never been higher."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="company-logo">HC</div>
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>VP of Operations, HealthCare Plus</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card reveal">
+                    <p class="testimonial-content">
+                        "Lucy has revolutionized how we handle orders. The accuracy is incredible,
+                        and our staff can now focus on delivering exceptional dining experiences
+                        instead of taking phone orders."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="company-logo">RG</div>
+                        <div class="author-info">
+                            <h4>Michael Chen</h4>
+                            <p>Owner, Restaurant Group International</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card reveal">
+                    <p class="testimonial-content">
+                        "Polly's ability to provide accurate, cited answers from our legal documents
+                        has saved our team countless hours. It's like having a legal research assistant
+                        available 24/7."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="company-logo">LS</div>
+                        <div class="author-info">
+                            <h4>David Martinez</h4>
+                            <p>General Counsel, Legal Services Corp</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+        <div class="cta-content">
+            <h2>Ready to Transform Your Business?</h2>
+            <p>
+                Join hundreds of companies leveraging our AI agents to automate operations,
+                enhance customer experiences, and drive growth.
+            </p>
+            <button class="btn" onclick="scrollToSection('contact')">
+                Get Started Today
+                <span>→</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section-dark" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="section-subtitle">
+                    Ready to transform your business with AI? Let's start a conversation
+                </p>
+            </div>
+
+            <div style="max-width: 600px; margin: 0 auto;">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="company" placeholder="Company Name">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="Tell us about your project" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">
+                        Send Message
+                        <span>→</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Meka AI</h4>
+                <p style="color: var(--text-muted);">
+                    Award-winning AI solution provider specializing in agentic solutions
+                    that transform business operations.
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Solutions</h4>
+                <ul>
+                    <li><a href="#solutions">Harper - Voice Agent</a></li>
+                    <li><a href="#solutions">Lucy - Ordering Agent</a></li>
+                    <li><a href="#solutions">Polly - Legal Agent</a></li>
+                    <li><a href="#solutions">NL2SQL - Data Agent</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Cloud Partners</h4>
+                <ul>
+                    <li><a href="#cloud">Google Cloud</a></li>
+                    <li><a href="#cloud">Microsoft Azure</a></li>
+                    <li><a href="#cloud">Amazon AWS</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#careers">Careers</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p style="color: var(--text-muted);">
+                © 2025 Meka AI. All rights reserved.
+            </p>
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                    </svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Twitter">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                    </svg>
+                </a>
+                <a href="#" class="social-link" aria-label="YouTube">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
