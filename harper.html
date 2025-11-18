@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Harper - AI Voice Agent for Service Industry. Automate calls, bookings, and customer queries 24/7 in any language.">
+    <meta name="keywords" content="AI voice agent, customer service automation, hotel booking AI, call center AI">
+    <title>Harper - AI Voice Agent | Meka AI</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .product-hero {
+            background: var(--gradient-hero);
+            padding: 120px var(--spacing-xl) var(--spacing-3xl);
+            text-align: center;
+        }
+
+        .product-hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .product-hero .subtitle {
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+            max-width: 800px;
+            margin: 0 auto var(--spacing-xl);
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--spacing-xl);
+            margin-top: var(--spacing-2xl);
+        }
+
+        .feature-item {
+            background: var(--white);
+            padding: var(--spacing-xl);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--glass-border);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .feature-item h3 {
+            color: var(--primary-blue);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .impact-card {
+            background: var(--gradient-card);
+            padding: var(--spacing-2xl);
+            border-radius: var(--radius-lg);
+            margin: var(--spacing-xl) 0;
+        }
+
+        .impact-number {
+            font-size: 3rem;
+            font-weight: 800;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .setup-steps {
+            counter-reset: step-counter;
+            list-style: none;
+            padding: 0;
+        }
+
+        .setup-steps li {
+            counter-increment: step-counter;
+            padding: var(--spacing-md);
+            margin-bottom: var(--spacing-md);
+            background: var(--white);
+            border-left: 4px solid var(--primary-blue);
+            border-radius: var(--radius-sm);
+            position: relative;
+            padding-left: 60px;
+        }
+
+        .setup-steps li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 35px;
+            height: 35px;
+            background: var(--gradient-primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="meka-ai-logo.jpg" alt="Meka AI Logo">
+                </a>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#solutions">Solutions</a></li>
+                <li><a href="index.html#cloud">Cloud</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact" class="nav-cta">Contact Us</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Hero -->
+    <section class="product-hero">
+        <div class="container">
+            <div style="font-size: 4rem; margin-bottom: var(--spacing-md);">🎙️</div>
+            <h1>Harper</h1>
+            <p class="subtitle">AI Voice Agent That Never Sleeps</p>
+            <p style="font-size: 1.2rem; color: var(--text-secondary); max-width: 700px; margin: 0 auto;">
+                Automate customer calls, bookings, and queries 24/7 across any service industry.
+                Harper speaks any language and handles unlimited conversations simultaneously.
+            </p>
+            <div class="hero-cta" style="margin-top: var(--spacing-xl);">
+                <button class="btn btn-primary" onclick="window.location.href='index.html#contact'">
+                    Get Started with Harper
+                    <span>→</span>
+                </button>
+                <button class="btn btn-secondary" onclick="window.location.href='#features'">
+                    Learn More
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Capabilities -->
+    <section class="section" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Harper Does</h2>
+                <p class="section-subtitle">
+                    Intelligent voice automation for the modern service industry
+                </p>
+            </div>
+
+            <div class="feature-grid">
+                <div class="feature-item reveal">
+                    <h3>📞 24/7 Call Handling</h3>
+                    <p>Never miss a customer call again. Harper answers instantly, any time of day or night, handling
+                        unlimited concurrent conversations.</p>
+                </div>
+
+                <div class="feature-item reveal">
+                    <h3>📅 Smart Booking System</h3>
+                    <p>Automatically schedule appointments, reserve tables, book rooms, or arrange service appointments
+                        with real-time availability checking.</p>
+                </div>
+
+                <div class="feature-item reveal">
+                    <h3>🌍 Multilingual Support</h3>
+                    <p>Communicate in any language your customers speak. Harper seamlessly switches between languages
+                        mid-conversation.</p>
+                </div>
+
+                <div class="feature-item reveal">
+                    <h3>❓ Intelligent Q&A</h3>
+                    <p>Answer common questions about services, pricing, hours, policies, and more with accurate,
+                        consistent information.</p>
+                </div>
+
+                <div class="feature-item reveal">
+                    <h3>🔄 CRM Integration</h3>
+                    <p>Syncs with your existing systems to access customer history, update records, and maintain data
+                        consistency.</p>
+                </div>
+
+                <div class="feature-item reveal">
+                    <h3>📊 Real-Time Analytics</h3>
+                    <p>Track call volumes, booking rates, customer satisfaction, and identify trends to optimize your
+                        operations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Industries We Serve</h2>
+                <p class="section-subtitle">
+                    Harper adapts to your specific industry needs
+                </p>
+            </div>
+
+            <div class="solutions-grid">
+                <div class="solution-card reveal">
+                    <div class="solution-icon">🏨</div>
+                    <h3>Hotels & Hospitality</h3>
+                    <p>Handle room reservations, answer guest inquiries, manage check-in/out times, and provide
+                        concierge services.</p>
+                </div>
+
+                <div class="solution-card reveal">
+                    <div class="solution-icon">🔧</div>
+                    <h3>Mechanic Shops</h3>
+                    <p>Schedule service appointments, provide repair estimates, answer technical questions, and send
+                        service reminders.</p>
+                </div>
+
+                <div class="solution-card reveal">
+                    <div class="solution-icon">🏥</div>
+                    <h3>Healthcare</h3>
+                    <p>Book patient appointments, handle prescription refills, answer basic medical questions, and
+                        manage waitlists.</p>
+                </div>
+
+                <div class="solution-card reveal">
+                    <div class="solution-icon">💇</div>
+                    <h3>Salons & Spas</h3>
+                    <p>Manage bookings for multiple services, handle cancellations, send appointment reminders, and
+                        answer service questions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Setup Process -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">High-Level Setup Process</h2>
+                <p class="section-subtitle">
+                    Get Harper up and running in days, not months
+                </p>
+            </div>
+
+            <div style="max-width: 900px; margin: 0 auto;">
+                <ol class="setup-steps">
+                    <li>
+                        <h3>Discovery & Requirements</h3>
+                        <p>We analyze your business needs, call patterns, and integration requirements. Define use cases
+                            and success metrics.</p>
+                    </li>
+
+                    <li>
+                        <h3>Data Integration</h3>
+                        <p>Connect Harper to your existing systems (CRM, booking software, databases). Configure API
+                            endpoints and data flows.</p>
+                    </li>
+
+                    <li>
+                        <h3>Training & Customization</h3>
+                        <p>Train Harper on your specific services, pricing, policies, and FAQs. Customize voice, tone,
+                            and conversation flows.</p>
+                    </li>
+
+                    <li>
+                        <h3>Testing & Optimization</h3>
+                        <p>Run test scenarios, refine responses, and optimize performance. Conduct user acceptance
+                            testing with your team.</p>
+                    </li>
+
+                    <li>
+                        <h3>Deployment & Monitoring</h3>
+                        <p>Go live with phased rollout. Monitor performance, gather feedback, and continuously improve
+                            based on real data.</p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Impact -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Business Impact</h2>
+                <p class="section-subtitle">
+                    Real results from Harper implementation
+                </p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card reveal">
+                    <div class="stat-number">80%</div>
+                    <div class="stat-label">Reduction in Missed Calls</div>
+                </div>
+
+                <div class="stat-card reveal">
+                    <div class="stat-number">60%</div>
+                    <div class="stat-label">Lower Operational Costs</div>
+                </div>
+
+                <div class="stat-card reveal">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Customer Availability</div>
+                </div>
+
+                <div class="stat-card reveal">
+                    <div class="stat-number">95%</div>
+                    <div class="stat-label">Customer Satisfaction</div>
+                </div>
+            </div>
+
+            <div class="impact-card reveal" style="margin-top: var(--spacing-3xl);">
+                <h3 style="color: var(--primary-blue); margin-bottom: var(--spacing-md);">Key Benefits</h3>
+                <div class="feature-grid">
+                    <div>
+                        <h4>💰 Cost Savings</h4>
+                        <p>Reduce staffing costs by 60% while handling 10x more calls. No overtime, no sick days, no
+                            training costs.</p>
+                    </div>
+                    <div>
+                        <h4>⚡ Instant Response</h4>
+                        <p>Zero wait times for customers. Harper answers immediately, reducing call abandonment by 75%.
+                        </p>
+                    </div>
+                    <div>
+                        <h4>📈 Increased Revenue</h4>
+                        <p>Capture 40% more bookings by being available 24/7. Never lose business to competitors due to
+                            missed calls.</p>
+                    </div>
+                    <div>
+                        <h4>😊 Better Experience</h4>
+                        <p>Consistent, professional service every time. No bad days, no language barriers, no human
+                            error.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-banner">
+        <div class="cta-content">
+            <h2>Ready to Transform Your Customer Service?</h2>
+            <p>
+                Join hundreds of businesses using Harper to automate calls and boost customer satisfaction.
+            </p>
+            <button class="btn" onclick="window.location.href='index.html#contact'">
+                Schedule a Demo
+                <span>→</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Meka AI</h4>
+                <p style="color: var(--text-muted);">
+                    Award-winning AI solution provider specializing in agentic solutions.
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Solutions</h4>
+                <ul>
+                    <li><a href="harper.html">Harper - Voice Agent</a></li>
+                    <li><a href="lucy.html">Lucy - Ordering Agent</a></li>
+                    <li><a href="polly.html">Polly - Legal Agent</a></li>
+                    <li><a href="nl2sql.html">NL2SQL - Data Agent</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p style="color: var(--text-muted);">© 2025 Meka AI. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

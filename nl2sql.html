@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="NL2SQL - Natural Language to SQL Agent. Query any database using plain English with millisecond response times.">
+    <meta name="keywords" content="natural language SQL, AI database query, text to SQL, database AI">
+    <title>NL2SQL - AI Data Agent | Meka AI</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .product-hero {
+            background: var(--gradient-hero);
+            padding: 120px var(--spacing-xl) var(--spacing-3xl);
+            text-align: center;
+        }
+
+        .product-hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .product-hero .subtitle {
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+            max-width: 800px;
+            margin: 0 auto var(--spacing-xl);
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--spacing-xl);
+            margin-top: var(--spacing-2xl);
+        }
+
+        .feature-item {
+            background: var(--white);
+            padding: var(--spacing-xl);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--glass-border);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .feature-item h3 {
+            color: var(--primary-blue);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .setup-steps {
+            counter-reset: step-counter;
+            list-style: none;
+            padding: 0;
+        }
+
+        .setup-steps li {
+            counter-increment: step-counter;
+            padding: var(--spacing-md);
+            margin-bottom: var(--spacing-md);
+            background: var(--white);
+            border-left: 4px solid var(--primary-blue);
+            border-radius: var(--radius-sm);
+            position: relative;
+            padding-left: 60px;
+        }
+
+        .setup-steps li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 35px;
+            height: 35px;
+            background: var(--gradient-primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+        }
+
+        .code-example {
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: var(--spacing-lg);
+            border-radius: var(--radius-md);
+            font-family: 'Courier New', monospace;
+            margin: var(--spacing-md) 0;
+        }
+
+        .code-example .query {
+            color: #9cdcfe;
+        }
+
+        .code-example .sql {
+            color: #ce9178;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="meka-ai-logo.jpg" alt="Meka AI Logo">
+                </a>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#solutions">Solutions</a></li>
+                <li><a href="index.html#cloud">Cloud</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact" class="nav-cta">Contact Us</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Hero -->
+    <section class="product-hero">
+        <div class="container">
+            <div style="font-size: 4rem; margin-bottom: var(--spacing-md);">💾</div>
+            <h1>NL2SQL</h1>
+            <p class="subtitle">Query Any Database in Plain English</p>
+            <p style="font-size: 1.2rem; color: var(--text-secondary); max-width: 700px; margin: 0 auto;">
+                Transform natural language questions into optimized SQL queries with millisecond latency.
+                Works with any database schema, no SQL knowledge required.
+            </p>
+            <div class="hero-cta" style="margin-top: var(--spacing-xl);">
+                <button class="btn btn-primary" onclick="window.location.href='index.html#contact'">
+                    Get Started with NL2SQL
+                    <span>→</span>
+                </button>
+                <button class="btn btn-secondary" onclick="window.location.href='#features'">
+                    Learn More
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Example -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">See It In Action</h2>
+                <p class="section-subtitle">
+                    From question to answer in milliseconds
+                </p>
+            </div>
+
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="code-example">
+                    <div class="query">💬 You ask: "Show me top 5 customers by revenue this quarter"</div>
+                    <br>
+                    <div class="sql">🤖 NL2SQL generates:</div>
+                    <pre style="margin: 10px 0; color: #ce9178;">SELECT customer_name, SUM(order_total) as revenue
+FROM customers c
+JOIN orders o ON c.id = o.customer_id
+WHERE o.order_date >= DATE_TRUNC('quarter', CURRENT_DATE)
+GROUP BY customer_name
+ORDER BY revenue DESC
+LIMIT 5;</pre>
+                    <div style="color: #4ec9b0;">✅ Results returned in 12ms</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Capabilities -->
+    <section class="section section-dark" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What NL2SQL Does</h2>
+                <p class="section-subtitle">
+                    Intelligent data access for everyone in your organization
+                </p>
+            </div>
+
+            <div class="feature-grid">
+                <div class="feature-item reveal">
+                    <h3>🗣️ Natural Language Queries</h3>
+                    <p>Ask questions in plain English. No SQL knowledge needed. Understands business terminology and
+                        context.</p>
+                </div>
+
+                <div class="feature-item reveal">
+                    <h3>⚡ Ultra-Low Latency</h3>
+                    <p>Generate and execute queries in milliseconds. Optimized for real-time analytics and dashboards.
+                    </p>
+                </div>
+
+                <div class="feature-item reveal">
+                    <h3>🔄 Any Schema</h3>
+                    <p>Works with any database schema automatically. Adapts to your table structures, relationships, and
+                        naming conventions.</p>
+                </div>
+
+                <div class="feature-item reveal">
+                    <h3>🎯 Query Optimization</h3>
+                    <p>Generates efficient SQL with proper indexes, joins, and aggregations. Faster than hand-written
+                        queries.</p>
+                </div>
+
+                <div class="feature-item reveal">
+                    <h3>🔐 Security & Permissions</h3>
+                    <p>Respects row-level security and column permissions. Users only see data they're authorized to
+                        access.</p>
+                </div>
+
+                <div class="feature-item reveal">
+                    <h3>📊 Multi-Database Support</h3>
+                    <p>Works with PostgreSQL, MySQL, SQL Server, Oracle, Snowflake, BigQuery, and more.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Perfect For</h2>
+                <p class="section-subtitle">
+                    Empowering every role with data access
+                </p>
+            </div>
+
+            <div class="solutions-grid">
+                <div class="solution-card reveal">
+                    <div class="solution-icon">📈</div>
+                    <h3>Business Analysts</h3>
+                    <p>Get instant answers to business questions without waiting for data team. Create ad-hoc reports in
+                        seconds.</p>
+                </div>
+
+                <div class="solution-card reveal">
+                    <div class="solution-icon">👔</div>
+                    <h3>Executives</h3>
+                    <p>Access real-time KPIs and metrics on demand. Make data-driven decisions without technical
+                        barriers.</p>
+                </div>
+
+                <div class="solution-card reveal">
+                    <div class="solution-icon">💼</div>
+                    <h3>Sales Teams</h3>
+                    <p>Query customer data, pipeline metrics, and performance stats instantly. No more waiting for
+                        reports.</p>
+                </div>
+
+                <div class="solution-card reveal">
+                    <div class="solution-icon">🛠️</div>
+                    <h3>Product Managers</h3>
+                    <p>Analyze user behavior, feature adoption, and product metrics without SQL expertise.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Setup Process -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">High-Level Setup Process</h2>
+                <p class="section-subtitle">
+                    From database connection to natural language queries in hours
+                </p>
+            </div>
+
+            <div style="max-width: 900px; margin: 0 auto;">
+                <ol class="setup-steps">
+                    <li>
+                        <h3>Database Connection</h3>
+                        <p>Connect NL2SQL to your database with read-only credentials. Supports all major SQL databases
+                            and data warehouses.</p>
+                    </li>
+
+                    <li>
+                        <h3>Schema Analysis</h3>
+                        <p>NL2SQL automatically analyzes your schema, understanding tables, columns, relationships, and
+                            data types.</p>
+                    </li>
+
+                    <li>
+                        <h3>Business Context Training</h3>
+                        <p>Map technical column names to business terminology. Define metrics, KPIs, and common
+                            calculations.</p>
+                    </li>
+
+                    <li>
+                        <h3>Security Configuration</h3>
+                        <p>Set up row-level security, column permissions, and user access controls to ensure data
+                            governance.</p>
+                    </li>
+
+                    <li>
+                        <h3>Testing & Validation</h3>
+                        <p>Test with real business questions. Validate query accuracy and optimize performance for your
+                            use cases.</p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Impact -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Business Impact</h2>
+                <p class="section-subtitle">
+                    Measurable results from NL2SQL implementation
+                </p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card reveal">
+                    <div class="stat-number">95%</div>
+                    <div class="stat-label">Faster Data Access</div>
+                </div>
+
+                <div class="stat-card reveal">
+                    <div class="stat-number">10ms</div>
+                    <div class="stat-label">Average Query Latency</div>
+                </div>
+
+                <div class="stat-card reveal">
+                    <div class="stat-number">80%</div>
+                    <div class="stat-label">Reduction in Data Team Requests</div>
+                </div>
+
+                <div class="stat-card reveal">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Team Data Accessibility</div>
+                </div>
+            </div>
+
+            <div class="impact-card reveal"
+                style="margin-top: var(--spacing-3xl); background: var(--gradient-card); padding: var(--spacing-2xl); border-radius: var(--radius-lg);">
+                <h3 style="color: var(--primary-blue); margin-bottom: var(--spacing-md);">Key Benefits</h3>
+                <div class="feature-grid">
+                    <div>
+                        <h4>⚡ Self-Service Analytics</h4>
+                        <p>Empower every employee to access data independently. Reduce bottlenecks and accelerate
+                            decision-making.</p>
+                    </div>
+                    <div>
+                        <h4>💰 Cost Efficiency</h4>
+                        <p>Reduce data team workload by 80%. Free analysts to focus on strategic insights instead of
+                            ad-hoc queries.</p>
+                    </div>
+                    <div>
+                        <h4>🎯 Perfect Accuracy</h4>
+                        <p>Generates syntactically correct SQL every time. Optimized queries run faster than manual
+                            alternatives.</p>
+                    </div>
+                    <div>
+                        <h4>📈 Data Democracy</h4>
+                        <p>Make data accessible to everyone, not just technical users. Foster data-driven culture across
+                            organization.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-banner">
+        <div class="cta-content">
+            <h2>Ready to Democratize Your Data?</h2>
+            <p>
+                Join organizations using NL2SQL to make data accessible to everyone.
+            </p>
+            <button class="btn" onclick="window.location.href='index.html#contact'">
+                Schedule a Demo
+                <span>→</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Meka AI</h4>
+                <p style="color: var(--text-muted);">
+                    Award-winning AI solution provider specializing in agentic solutions.
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Solutions</h4>
+                <ul>
+                    <li><a href="harper.html">Harper - Voice Agent</a></li>
+                    <li><a href="lucy.html">Lucy - Ordering Agent</a></li>
+                    <li><a href="polly.html">Polly - Legal Agent</a></li>
+                    <li><a href="nl2sql.html">NL2SQL - Data Agent</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p style="color: var(--text-muted);">© 2025 Meka AI. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

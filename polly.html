@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Polly - AI Legal Documentation Agent. Get instant answers from legal docs and policies with precise citations and source verification.">
+    <meta name="keywords" content="AI legal assistant, document AI, policy automation, legal research AI">
+    <title>Polly - AI Legal Agent | Meka AI</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .product-hero {
+            background: var(--gradient-hero);
+            padding: 120px var(--spacing-xl) var(--spacing-3xl);
+            text-align: center;
+        }
+
+        .product-hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .product-hero .subtitle {
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+            max-width: 800px;
+            margin: 0 auto var(--spacing-xl);
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--spacing-xl);
+            margin-top: var(--spacing-2xl);
+        }
+
+        .feature-item {
+            background: var(--white);
+            padding: var(--spacing-xl);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--glass-border);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .feature-item h3 {
+            color: var(--primary-blue);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .setup-steps {
+            counter-reset: step-counter;
+            list-style: none;
+            padding: 0;
+        }
+
+        .setup-steps li {
+            counter-increment: step-counter;
+            padding: var(--spacing-md);
+            margin-bottom: var(--spacing-md);
+            background: var(--white);
+            border-left: 4px solid var(--primary-blue);
+            border-radius: var(--radius-sm);
+            position: relative;
+            padding-left: 60px;
+        }
+
+        .setup-steps li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 35px;
+            height: 35px;
+            background: var(--gradient-primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="meka-ai-logo.jpg" alt="Meka AI Logo">
+                </a>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#solutions">Solutions</a></li>
+                <li><a href="index.html#cloud">Cloud</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact" class="nav-cta">Contact Us</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Hero -->
+    <section class="product-hero">
+        <div class="container">
+            <div style="font-size: 4rem; margin-bottom: var(--spacing-md);">⚖️</div>
+            <h1>Polly</h1>
+            <p class="subtitle">AI Legal & Policy Documentation Agent</p>
+            <p style="font-size: 1.2rem; color: var(--text-secondary); max-width: 700px; margin: 0 auto;">
+                Get instant, accurate answers from your legal documents and internal policies with precise citations,
+                source verification, and complete audit trails.
+            </p>
+            <div class="hero-cta" style="margin-top: var(--spacing-xl);">
+                <button class="btn btn-primary" onclick="window.location.href='index.html#contact'">
+                    Get Started with Polly
+                    <span>→</span>
+                </button>
+                <button class="btn btn-secondary" onclick="window.location.href='#features'">
+                    Learn More
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Capabilities -->
+    <section class="section" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Polly Does</h2>
+                <p class="section-subtitle">
+                    Intelligent document analysis with provenance and citations
+                </p>
+            </div>
+
+            <div class="feature-grid">
+                <div class="feature-item reveal">
+                    <h3>📚 Document Intelligence</h3>
+                    <p>Instantly search and analyze thousands of legal documents, contracts, policies, and regulations
+                        with AI-powered understanding.</p>
+                </div>
+
+                <div class="feature-item reveal">
+                    <h3>🔍 Precise Citations</h3>
+                    <p>Every answer includes exact citations with page numbers, section references, and direct quotes
+                        from source documents.</p>
+                </div>
+
+                <div class="feature-item reveal">
+                    <h3>✅ Source Verification</h3>
+                    <p>Complete provenance tracking ensures all information is grounded in your actual documents, not
+                        hallucinated.</p>
+                </div>
+
+                <div class="feature-item reveal">
+                    <h3>🔐 Secure & Compliant</h3>
+                    <p>Enterprise-grade security with role-based access control, encryption, and full audit logging for
+                        compliance.</p>
+                </div>
+
+                <div class="feature-item reveal">
+                    <h3>🤖 Natural Language Queries</h3>
+                    <p>Ask questions in plain English. Polly understands context, legal terminology, and complex
+                        multi-part questions.</p>
+                </div>
+
+                <div class="feature-item reveal">
+                    <h3>📊 Analytics & Insights</h3>
+                    <p>Track frequently asked questions, identify policy gaps, and understand how your team uses
+                        documentation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Perfect For</h2>
+                <p class="section-subtitle">
+                    Polly serves multiple departments and use cases
+                </p>
+            </div>
+
+            <div class="solutions-grid">
+                <div class="solution-card reveal">
+                    <div class="solution-icon">⚖️</div>
+                    <h3>Legal Departments</h3>
+                    <p>Research case law, contracts, and regulations. Get instant answers to legal questions with proper
+                        citations.</p>
+                </div>
+
+                <div class="solution-card reveal">
+                    <div class="solution-icon">📋</div>
+                    <h3>HR & Compliance</h3>
+                    <p>Navigate employee handbooks, policies, and compliance requirements. Ensure consistent policy
+                        interpretation.</p>
+                </div>
+
+                <div class="solution-card reveal">
+                    <div class="solution-icon">🏢</div>
+                    <h3>Corporate Governance</h3>
+                    <p>Access board resolutions, bylaws, and corporate policies. Maintain governance documentation with
+                        ease.</p>
+                </div>
+
+                <div class="solution-card reveal">
+                    <div class="solution-icon">🔒</div>
+                    <h3>Risk Management</h3>
+                    <p>Analyze contracts for risk factors, compliance issues, and liability clauses across your document
+                        library.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Setup Process -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">High-Level Setup Process</h2>
+                <p class="section-subtitle">
+                    From document upload to intelligent search in days
+                </p>
+            </div>
+
+            <div style="max-width: 900px; margin: 0 auto;">
+                <ol class="setup-steps">
+                    <li>
+                        <h3>Document Collection & Upload</h3>
+                        <p>Gather legal documents, policies, contracts, and regulations. Upload in any format (PDF,
+                            Word, scanned images).</p>
+                    </li>
+
+                    <li>
+                        <h3>AI Processing & Indexing</h3>
+                        <p>Polly processes documents using advanced NLP, extracting structure, relationships, and key
+                            information.</p>
+                    </li>
+
+                    <li>
+                        <h3>Access Control Configuration</h3>
+                        <p>Set up role-based permissions, define who can access which documents, and configure approval
+                            workflows.</p>
+                    </li>
+
+                    <li>
+                        <h3>Training & Customization</h3>
+                        <p>Train Polly on your specific terminology, citation formats, and organizational structure.</p>
+                    </li>
+
+                    <li>
+                        <h3>Testing & Validation</h3>
+                        <p>Legal team validates answers, refines responses, and ensures accuracy before company-wide
+                            rollout.</p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Impact -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Business Impact</h2>
+                <p class="section-subtitle">
+                    Measurable results from Polly implementation
+                </p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card reveal">
+                    <div class="stat-number">90%</div>
+                    <div class="stat-label">Faster Document Research</div>
+                </div>
+
+                <div class="stat-card reveal">
+                    <div class="stat-number">75%</div>
+                    <div class="stat-label">Reduction in Legal Queries</div>
+                </div>
+
+                <div class="stat-card reveal">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Citation Accuracy</div>
+                </div>
+
+                <div class="stat-card reveal">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Document Access</div>
+                </div>
+            </div>
+
+            <div class="impact-card reveal"
+                style="margin-top: var(--spacing-3xl); background: var(--gradient-card); padding: var(--spacing-2xl); border-radius: var(--radius-lg);">
+                <h3 style="color: var(--primary-blue); margin-bottom: var(--spacing-md);">Key Benefits</h3>
+                <div class="feature-grid">
+                    <div>
+                        <h4>⚡ Instant Research</h4>
+                        <p>Find relevant information in seconds instead of hours. Search across thousands of documents
+                            simultaneously.</p>
+                    </div>
+                    <div>
+                        <h4>💰 Cost Savings</h4>
+                        <p>Reduce legal research time by 90%. Free lawyers to focus on high-value strategic work.</p>
+                    </div>
+                    <div>
+                        <h4>🎯 Perfect Accuracy</h4>
+                        <p>Every answer is grounded in actual documents with precise citations. No hallucinations or
+                            guesswork.</p>
+                    </div>
+                    <div>
+                        <h4>📈 Knowledge Democratization</h4>
+                        <p>Empower non-legal staff to find answers independently, reducing bottlenecks and improving
+                            efficiency.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-banner">
+        <div class="cta-content">
+            <h2>Ready to Transform Legal Research?</h2>
+            <p>
+                Join organizations using Polly to make legal knowledge accessible and actionable.
+            </p>
+            <button class="btn" onclick="window.location.href='index.html#contact'">
+                Schedule a Demo
+                <span>→</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Meka AI</h4>
+                <p style="color: var(--text-muted);">
+                    Award-winning AI solution provider specializing in agentic solutions.
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Solutions</h4>
+                <ul>
+                    <li><a href="harper.html">Harper - Voice Agent</a></li>
+                    <li><a href="lucy.html">Lucy - Ordering Agent</a></li>
+                    <li><a href="polly.html">Polly - Legal Agent</a></li>
+                    <li><a href="nl2sql.html">NL2SQL - Data Agent</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p style="color: var(--text-muted);">© 2025 Meka AI. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

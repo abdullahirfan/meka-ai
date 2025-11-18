@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Lucy - AI Ordering Agent for Restaurants and Hotels. Automate phone orders and kiosk interactions with 99.9% accuracy.">
+    <meta name="keywords" content="AI restaurant ordering, automated food ordering, hotel room service AI, kiosk AI">
+    <title>Lucy - AI Ordering Agent | Meka AI</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .product-hero {
+            background: var(--gradient-hero);
+            padding: 120px var(--spacing-xl) var(--spacing-3xl);
+            text-align: center;
+        }
+
+        .product-hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .product-hero .subtitle {
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+            max-width: 800px;
+            margin: 0 auto var(--spacing-xl);
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--spacing-xl);
+            margin-top: var(--spacing-2xl);
+        }
+
+        .feature-item {
+            background: var(--white);
+            padding: var(--spacing-xl);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--glass-border);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .feature-item h3 {
+            color: var(--primary-blue);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .setup-steps {
+            counter-reset: step-counter;
+            list-style: none;
+            padding: 0;
+        }
+
+        .setup-steps li {
+            counter-increment: step-counter;
+            padding: var(--spacing-md);
+            margin-bottom: var(--spacing-md);
+            background: var(--white);
+            border-left: 4px solid var(--primary-blue);
+            border-radius: var(--radius-sm);
+            position: relative;
+            padding-left: 60px;
+        }
+
+        .setup-steps li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 35px;
+            height: 35px;
+            background: var(--gradient-primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="meka-ai-logo.jpg" alt="Meka AI Logo">
+                </a>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#solutions">Solutions</a></li>
+                <li><a href="index.html#cloud">Cloud</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact" class="nav-cta">Contact Us</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Hero -->
+    <section class="product-hero">
+        <div class="container">
+            <div style="font-size: 4rem; margin-bottom: var(--spacing-md);">🍽️</div>
+            <h1>Lucy</h1>
+            <p class="subtitle">AI Ordering Agent for Perfect Orders, Every Time</p>
+            <p style="font-size: 1.2rem; color: var(--text-secondary); max-width: 700px; margin: 0 auto;">
+                Transform how you take orders with AI that understands complex requests, handles modifications,
+                and ensures 99.9% accuracy across phone and kiosk channels.
+            </p>
+            <div class="hero-cta" style="margin-top: var(--spacing-xl);">
+                <button class="btn btn-primary" onclick="window.location.href='index.html#contact'">
+                    Get Started with Lucy
+                    <span>→</span>
+                </button>
+                <button class="btn btn-secondary" onclick="window.location.href='#features'">
+                    Learn More
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Capabilities -->
+    <section class="section" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Lucy Does</h2>
+                <p class="section-subtitle">
+                    Intelligent ordering automation for restaurants and hotels
+                </p>
+            </div>
+
+            <div class="feature-grid">
+                <div class="feature-item reveal">
+                    <h3>📞 Phone Order Automation</h3>
+                    <p>Take unlimited phone orders simultaneously with perfect accuracy. Handles complex modifications,
+                        special requests, and dietary restrictions.</p>
+                </div>
+
+                <div class="feature-item reveal">
+                    <h3>🖥️ Kiosk Integration</h3>
+                    <p>Power self-service kiosks with intelligent conversation. Guides customers through menu, suggests
+                        items, and processes payments.</p>
+                </div>
+
+                <div class="feature-item reveal">
+                    <h3>🎯 99.9% Accuracy</h3>
+                    <p>Advanced NLP ensures orders are captured correctly the first time. Confirms details before
+                        finalizing to eliminate errors.</p>
+                </div>
+
+                <div class="feature-item reveal">
+                    <h3>💡 Smart Upselling</h3>
+                    <p>Intelligently suggests complementary items, upgrades, and promotions based on order context and
+                        customer history.</p>
+                </div>
+
+                <div class="feature-item reveal">
+                    <h3>🔄 POS Integration</h3>
+                    <p>Seamlessly integrates with your existing POS system. Orders flow directly to kitchen without
+                        manual entry.</p>
+                </div>
+
+                <div class="feature-item reveal">
+                    <h3>📊 Order Analytics</h3>
+                    <p>Track popular items, peak times, average order value, and customer preferences to optimize menu
+                        and operations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Perfect For</h2>
+                <p class="section-subtitle">
+                    Lucy adapts to your specific ordering needs
+                </p>
+            </div>
+
+            <div class="solutions-grid">
+                <div class="solution-card reveal">
+                    <div class="solution-icon">🍕</div>
+                    <h3>Quick Service Restaurants</h3>
+                    <p>Handle high-volume phone orders during peak hours. Reduce wait times and increase order capacity
+                        by 300%.</p>
+                </div>
+
+                <div class="solution-card reveal">
+                    <div class="solution-icon">🍽️</div>
+                    <h3>Fine Dining</h3>
+                    <p>Take reservations with meal pre-orders. Handle special dietary requirements and wine pairings
+                        with expertise.</p>
+                </div>
+
+                <div class="solution-card reveal">
+                    <div class="solution-icon">🏨</div>
+                    <h3>Hotel Room Service</h3>
+                    <p>24/7 room service ordering in multiple languages. Coordinate with kitchen and housekeeping for
+                        perfect delivery.</p>
+                </div>
+
+                <div class="solution-card reveal">
+                    <div class="solution-icon">🥡</div>
+                    <h3>Delivery & Takeout</h3>
+                    <p>Manage delivery orders with address verification, timing coordination, and real-time order
+                        tracking.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Setup Process -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">High-Level Setup Process</h2>
+                <p class="section-subtitle">
+                    From menu upload to live orders in under 2 weeks
+                </p>
+            </div>
+
+            <div style="max-width: 900px; margin: 0 auto;">
+                <ol class="setup-steps">
+                    <li>
+                        <h3>Menu Digitization</h3>
+                        <p>Upload your menu with items, descriptions, prices, and modifiers. Lucy learns your complete
+                            catalog including seasonal items.</p>
+                    </li>
+
+                    <li>
+                        <h3>POS Integration</h3>
+                        <p>Connect Lucy to your POS system via API. Configure order routing, payment processing, and
+                            receipt generation.</p>
+                    </li>
+
+                    <li>
+                        <h3>Voice & Conversation Training</h3>
+                        <p>Customize Lucy's voice, tone, and conversation style. Train on your specific terminology,
+                            promotions, and policies.</p>
+                    </li>
+
+                    <li>
+                        <h3>Testing & Refinement</h3>
+                        <p>Run test orders covering all menu items and scenarios. Refine responses based on your team's
+                            feedback.</p>
+                    </li>
+
+                    <li>
+                        <h3>Soft Launch & Optimization</h3>
+                        <p>Start with limited hours or specific channels. Monitor performance, gather customer feedback,
+                            and optimize before full rollout.</p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Impact -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Business Impact</h2>
+                <p class="section-subtitle">
+                    Measurable results from Lucy implementation
+                </p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card reveal">
+                    <div class="stat-number">300%</div>
+                    <div class="stat-label">Increase in Order Capacity</div>
+                </div>
+
+                <div class="stat-card reveal">
+                    <div class="stat-number">99.9%</div>
+                    <div class="stat-label">Order Accuracy Rate</div>
+                </div>
+
+                <div class="stat-card reveal">
+                    <div class="stat-number">45%</div>
+                    <div class="stat-label">Reduction in Labor Costs</div>
+                </div>
+
+                <div class="stat-card reveal">
+                    <div class="stat-number">25%</div>
+                    <div class="stat-label">Higher Average Order Value</div>
+                </div>
+            </div>
+
+            <div class="impact-card reveal"
+                style="margin-top: var(--spacing-3xl); background: var(--gradient-card); padding: var(--spacing-2xl); border-radius: var(--radius-lg);">
+                <h3 style="color: var(--primary-blue); margin-bottom: var(--spacing-md);">Key Benefits</h3>
+                <div class="feature-grid">
+                    <div>
+                        <h4>⚡ Lightning Fast</h4>
+                        <p>Process orders 5x faster than human staff. Handle rush hours without breaking a sweat.</p>
+                    </div>
+                    <div>
+                        <h4>💰 Revenue Growth</h4>
+                        <p>Increase average order value by 25% through intelligent upselling and cross-selling.</p>
+                    </div>
+                    <div>
+                        <h4>😊 Staff Liberation</h4>
+                        <p>Free your team from phone duty to focus on food quality and in-person customer service.</p>
+                    </div>
+                    <div>
+                        <h4>📈 Scalability</h4>
+                        <p>Handle unlimited concurrent orders. Scale from 1 to 1000 locations without adding staff.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-banner">
+        <div class="cta-content">
+            <h2>Ready to Revolutionize Your Ordering?</h2>
+            <p>
+                Join leading restaurants using Lucy to increase capacity and accuracy while reducing costs.
+            </p>
+            <button class="btn" onclick="window.location.href='index.html#contact'">
+                Schedule a Demo
+                <span>→</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Meka AI</h4>
+                <p style="color: var(--text-muted);">
+                    Award-winning AI solution provider specializing in agentic solutions.
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Solutions</h4>
+                <ul>
+                    <li><a href="harper.html">Harper - Voice Agent</a></li>
+                    <li><a href="lucy.html">Lucy - Ordering Agent</a></li>
+                    <li><a href="polly.html">Polly - Legal Agent</a></li>
+                    <li><a href="nl2sql.html">NL2SQL - Data Agent</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p style="color: var(--text-muted);">© 2025 Meka AI. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
