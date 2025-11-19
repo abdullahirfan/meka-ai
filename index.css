@@ -177,9 +177,6 @@ a {
     height: 100px;
     width: auto;
     object-fit: contain;
-    background: white;
-    padding: 5px;
-    border-radius: 4px;
 }
 
 .logo:hover {
@@ -476,6 +473,10 @@ a {
     border-color: var(--primary-blue);
     box-shadow: var(--shadow-glow);
     background: rgba(255, 255, 255, 0.08);
+}
+
+.solution-card:hover img {
+    transform: scale(1.05);
 }
 
 .solution-icon {
