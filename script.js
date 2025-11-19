@@ -8,13 +8,13 @@ let lastScroll = 0;
 
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
-    
+
     if (currentScroll > 100) {
         navbar.classList.add('scrolled');
     } else {
         navbar.classList.remove('scrolled');
     }
-    
+
     lastScroll = currentScroll;
 });
 
@@ -24,7 +24,7 @@ const navLinks = document.getElementById('navLinks');
 
 menuToggle.addEventListener('click', () => {
     navLinks.classList.toggle('active');
-    
+
     // Animate hamburger menu
     const spans = menuToggle.querySelectorAll('span');
     if (navLinks.classList.contains('active')) {
@@ -67,10 +67,10 @@ const revealElements = document.querySelectorAll('.reveal');
 const revealOnScroll = () => {
     const windowHeight = window.innerHeight;
     const revealPoint = 100;
-    
+
     revealElements.forEach(element => {
         const elementTop = element.getBoundingClientRect().top;
-        
+
         if (elementTop < windowHeight - revealPoint) {
             element.classList.add('active');
         }
@@ -86,13 +86,13 @@ const contactForm = document.getElementById('contactForm');
 
 contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    
+
     // Get form values
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const company = document.getElementById('company').value;
     const message = document.getElementById('message').value;
-    
+
     // Create success message
     const successMessage = document.createElement('div');
     successMessage.style.cssText = `
@@ -113,12 +113,12 @@ contactForm.addEventListener('submit', (e) => {
         <h3 style="margin-bottom: 0.5rem; font-size: 1.5rem;">Thank You!</h3>
         <p style="margin: 0; opacity: 0.9;">We'll get back to you soon.</p>
     `;
-    
+
     document.body.appendChild(successMessage);
-    
+
     // Reset form
     contactForm.reset();
-    
+
     // Remove message after 3 seconds
     setTimeout(() => {
         successMessage.style.animation = 'fadeOut 0.5s ease';
@@ -126,7 +126,7 @@ contactForm.addEventListener('submit', (e) => {
             document.body.removeChild(successMessage);
         }, 500);
     }, 3000);
-    
+
     // Log form data (in production, this would be sent to a server)
     console.log('Form submitted:', { name, email, company, message });
 });
@@ -139,7 +139,7 @@ solutionCards.forEach(card => {
         const icon = card.querySelector('.solution-icon');
         icon.style.animation = 'float 2s ease-in-out infinite';
     });
-    
+
     card.addEventListener('mouseleave', () => {
         const icon = card.querySelector('.solution-icon');
         icon.style.animation = 'none';
@@ -147,16 +147,17 @@ solutionCards.forEach(card => {
 });
 
 // Parallax effect for hero section
-const hero = document.querySelector('.hero');
-
-window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const parallaxSpeed = 0.5;
-    
-    if (hero && scrolled < window.innerHeight) {
-        hero.style.transform = `translateY(${scrolled * parallaxSpeed}px)`;
-    }
-});
+// Parallax effect for hero section - Disabled to prevent overlap
+// const hero = document.querySelector('.hero');
+//
+// window.addEventListener('scroll', () => {
+//     const scrolled = window.pageYOffset;
+//     const parallaxSpeed = 0.5;
+//    
+//     if (hero && scrolled < window.innerHeight) {
+//         hero.style.transform = `translateY(${scrolled * parallaxSpeed}px)`;
+//     }
+// });
 
 // Add cursor glow effect
 const createCursorGlow = () => {
@@ -174,7 +175,7 @@ const createCursorGlow = () => {
         display: none;
     `;
     document.body.appendChild(glow);
-    
+
     document.addEventListener('mousemove', (e) => {
         glow.style.display = 'block';
         glow.style.left = `${e.clientX - 150}px`;
@@ -191,7 +192,7 @@ if (window.innerWidth > 768) {
 const createParticles = () => {
     const hero = document.querySelector('.hero');
     const particleCount = 30;
-    
+
     for (let i = 0; i < particleCount; i++) {
         const particle = document.createElement('div');
         particle.style.cssText = `

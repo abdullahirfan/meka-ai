@@ -78,6 +78,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 100px;
     font-size: 16px;
 }
 
@@ -144,7 +145,7 @@ a {
     left: 0;
     right: 0;
     z-index: 1000;
-    padding: 1rem var(--spacing-xl);
+    padding: 0.75rem var(--spacing-xl);
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
@@ -174,9 +175,14 @@ a {
 }
 
 .logo img {
-    height: 80px;
+    height: 140px;
     width: auto;
     object-fit: contain;
+    transition: height 0.3s ease;
+}
+
+.navbar.scrolled .logo img {
+    height: 60px;
 }
 
 .logo:hover {
@@ -266,7 +272,7 @@ a {
     justify-content: center;
     position: relative;
     overflow: hidden;
-    padding: var(--spacing-3xl) var(--spacing-xl);
+    padding: 200px var(--spacing-xl) var(--spacing-3xl);
     background: var(--gradient-hero);
 }
 
@@ -404,6 +410,9 @@ a {
 .section {
     padding: var(--spacing-3xl) var(--spacing-xl);
     position: relative;
+    margin-top: var(--spacing-2xl);
+    background: var(--white);
+    z-index: 10;
 }
 
 .section-dark {
